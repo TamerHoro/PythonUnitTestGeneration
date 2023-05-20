@@ -1,6 +1,6 @@
 {
     "file": "bmi_calculator",
-    "location": "example/",
+    "location": "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/",
     "class": "BMICalc",
     "constructor": { 
         "parameters": [

@@ -18,7 +18,7 @@ def statement_fitness(metadata, solution):
         if "TOTAL" in line:
             words = line.split(" ")
             coverage = words[len(words) - 1]
-            fitness = coverage[:len(coverage) - 1]
+            fitness = coverage[0]+coverage[1]
 
     return float(fitness)
 

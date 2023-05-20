@@ -271,7 +271,7 @@ def uniform_crossover(parent1, parent2):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "example/BMICalc_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
 
 # Fitness function
 fitness_function = "statement"
@@ -283,7 +283,7 @@ max_test_cases = 20
 max_actions = 20
 
 # Maximum number of generations
-max_gen = 200
+max_gen = 20
 
 # Population size
 population_size = 20
