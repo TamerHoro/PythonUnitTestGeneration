@@ -66,24 +66,25 @@ def change_random_parameter(test_suite):
     # If the action is a constructor call
     if test_suite[test_case_selected][action_selected][0] == -1:
         # Select the parameter to modify
-        num_parameters = len(
-            test_suite[test_case_selected][action_selected][1]) - 1
-        parameter_selected = random.randint(0, num_parameters)
-        parameter_data = metadata["constructor"]["parameters"][parameter_selected]
+        if len(metadata["constructor"])>0: 
+            num_parameters = len(
+                test_suite[test_case_selected][action_selected][1]) - 1
+            parameter_selected = random.randint(0, num_parameters)
+            parameter_data = metadata["constructor"]["parameters"][parameter_selected]
 
-        # Get the current value of that parameter
-        value = test_suite[test_case_selected][action_selected][1][
-            parameter_selected]
+            # Get the current value of that parameter
+            value = test_suite[test_case_selected][action_selected][1][
+                parameter_selected]
 
-        if "min" in parameter_data.keys():
-            if value + increment < parameter_data["min"]:
-                increment = parameter_data["min"] - value
-        if "max" in parameter_data.keys():
-            if value + increment > parameter_data["max"]:
-                increment = parameter_data["max"] - value
+            if "min" in parameter_data.keys():
+                if value + increment < parameter_data["min"]:
+                    increment = parameter_data["min"] - value
+            if "max" in parameter_data.keys():
+                if value + increment > parameter_data["max"]:
+                    increment = parameter_data["max"] - value
 
-        test_suite[test_case_selected][action_selected][1][
-            parameter_selected] += increment
+            test_suite[test_case_selected][action_selected][1][
+                parameter_selected] += increment
 
     # If the parameter is an action (assignment or method call)
     elif "parameters" in metadata["actions"][
@@ -178,7 +179,7 @@ def create_population(size):
         new_solution.test_suite = generate_test_suite(metadata, max_test_cases,
                                                       max_actions)
         calculate_fitness(metadata, fitness_function, num_tests_penalty,
-                          length_test_penalty, new_solution)
+                          length_test_penalty, new_solution, )
         pop.append(new_solution)
 
     return pop
@@ -271,7 +272,7 @@ def uniform_crossover(parent1, parent2):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_calculator/calculator_metadata.json"
 
 # Fitness function
 fitness_function = "statement"
@@ -308,7 +309,7 @@ exhaustion = 30
 num_tests_penalty = 10
 
 # Test length penalty
-length_test_penalty = 30
+length_test_penalty = 50
 
 # Get command-line arguments
 try:
@@ -467,4 +468,4 @@ print("Number of tests: " + str(len(solution_best.test_suite)))
 print("Average test length:" + str(solution_best.average_length()))
 
 # Print the best test suite to a file
-write_to_file(metadata, solution_best.test_suite)
+write_to_file(metadata, solution_best.test_suite, "genetic")

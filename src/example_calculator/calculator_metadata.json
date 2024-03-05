@@ -1,0 +1,24 @@
+{
+    "file": "calculator",
+    "location": "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_calculator/",
+    "class": "Calc",
+    "constructor": { },
+    "actions": [
+        { "name": "add", "type": "method", "parameters": [ 
+            { "type": "integer", "min": -1, "max": 150 },
+            { "type": "integer", "min": -1, "max": 150 } ], "return": "true"
+        },
+        { "name": "subtract", "type": "method", "parameters": [ 
+            { "type": "integer", "min": -1, "max": 150 },
+            { "type": "integer", "min": -1, "max": 150 } ], "return": "true" 
+        },
+        { "name": "multiply", "type": "method", "parameters": [ 
+            { "type": "integer", "min": -10, "max": 10 },
+            { "type": "integer", "min": -10, "max": 10 } ], "return": "true" 
+        },
+        { "name": "divide", "type": "method", "parameters": [ 
+            { "type": "integer", "min": -10, "max": 10 },
+            { "type": "integer", "min": -10, "max": 10 } ], "return": "true"
+        }
+    ]
+}

@@ -10,7 +10,7 @@ def statement_fitness(metadata, solution):
     write_to_file(metadata, solution.test_suite)
     process = subprocess.Popen(["pytest", "--cov=" + metadata["file"],
                                 metadata["location"] + "/test_" + metadata[
-                                    "file"] + ".py"], stdout=subprocess.PIPE)
+                                    "file"] + "_.py"], stdout=subprocess.PIPE)
     stdout = str(process.communicate()[0])
     lines = stdout.split("\\n")
     for line in lines:
@@ -19,7 +19,7 @@ def statement_fitness(metadata, solution):
             words = line.split(" ")
             coverage = words[len(words) - 1]
             fitness = coverage[0]+coverage[1]
-
+   
     return float(fitness)
 
 
