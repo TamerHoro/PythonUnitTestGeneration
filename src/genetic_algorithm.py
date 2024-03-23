@@ -272,7 +272,7 @@ def uniform_crossover(parent1, parent2):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_calculator/calculator_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
 
 # Fitness function
 fitness_function = "statement"
@@ -284,7 +284,7 @@ max_test_cases = 20
 max_actions = 20
 
 # Maximum number of generations
-max_gen = 20
+max_gen = 15
 
 # Population size
 population_size = 20
@@ -458,8 +458,15 @@ while gen <= max_gen and stagnation <= exhaustion:
     gen += 1
     stagnation += 1
 
-# Print information about the best test suite seen
 
+#Log past results    
+coverage = statement_fitness(metadata, solution_best)
+totalSuiteLength = solution_best.total_length()
+f = open("GeneticFitnnesslog.txt", "a")
+f.write('Coverage: '+str(coverage)+' | Fitness: '+str(solution_best.fitness)) # + '\n'
+f.close()
+
+# Print information about the best test suite seen
 print("Best Test Suite:")
 print(solution_best.test_suite)
 print("Best Fitness: " + str(solution_best.fitness))

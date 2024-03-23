@@ -1,0 +1,2 @@
+
+pynguin --project-path C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example --output-path C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/pynguin-results --module-name bmi_calculator -v

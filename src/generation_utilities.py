@@ -18,6 +18,14 @@ class Solution:
             actions += len(test)
 
         return actions / len(self.test_suite)
+    
+    def total_length(self):
+        actions = 0.0
+
+        for test in self.test_suite:
+            actions += len(test)
+
+        return actions
 
 
 # Generates a test suite, containing between 1 and "max" test cases

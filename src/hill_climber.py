@@ -195,7 +195,7 @@ def mutate(solution):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_calculator/calculator_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
 
 # Fitness function
 fitness_function = "statement"
@@ -207,7 +207,7 @@ max_test_cases = 20
 max_actions = 20
 
 # Maximum number of generations
-max_gen = 20
+max_gen = 80
 
 # Maximum number of restarts
 max_restarts = 5
@@ -219,7 +219,7 @@ max_tries = 50
 num_tests_penalty = 10
 
 # Test length penalty
-length_test_penalty = 30
+length_test_penalty = 50
 
 # Get command-line arguments
 try:
@@ -342,6 +342,14 @@ while gen <= max_gen and restarts <= max_restarts:
 
     # Increment generation
     gen += 1
+
+#Log past results  
+coverage = statement_fitness(metadata, solution_best)
+totalSuiteLength = solution_best.total_length()
+f = open("HillClimberFitnnesslog.txt", "a")
+f.write('Coverage: '+str(coverage)+' | Fitness: '+str(solution_best.fitness)) # + '\n'
+f.close()
+
 
 # Print information about the best test suite seen
 print("Best Test Suite:")

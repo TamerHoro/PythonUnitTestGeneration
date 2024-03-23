@@ -19,9 +19,12 @@ def statement_fitness(metadata, solution):
             words = line.split(" ")
             coverage = words[len(words) - 1]
             fitness = coverage[0]+coverage[1]
-   
+            if fitness == "10":
+                if coverage[2]== "0":
+                    fitness += coverage[2]
+    
+    print("Coverage: "+fitness)
     return float(fitness)
-
 
 def calculate_fitness(metadata, fitness_function, num_tests_penalty,
                       length_test_penalty, solution):
@@ -37,8 +40,8 @@ def calculate_fitness(metadata, fitness_function, num_tests_penalty,
 
     # Add a penalty to control the length of individual test cases
     # Get the average test suite length)
-    total_length = sum([len(test) for test in solution.test_suite]) / len(
+    avarage_length = sum([len(test) for test in solution.test_suite]) / len(
         solution.test_suite)
-    fitness -= float(total_length / length_test_penalty)
+    fitness -= float(avarage_length / length_test_penalty)
 
     solution.fitness = fitness

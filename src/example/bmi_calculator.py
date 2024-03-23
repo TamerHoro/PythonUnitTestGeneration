@@ -1,3 +1,5 @@
+from typing import Optional
+
 class BMICalc:
 
     def __init__(self, height, weight, age):

@@ -1,0 +1,26 @@
+64.22285714285714
+Coverage:61.0| Fitness: 60.25333333333333
+Coverage: 65.0 | Fitness: 63.95777777777777
+-----------------------------------
+Coverage: 63.0 | Fitness: 62.00666666666667Time passed: 264.76437854766846
+-----------------------------------
+Coverage: 77.0 | Fitness: 75.72727272727273 | ime passed: 236.4956979751587
+Coverage: 63.0 | Fitness: 62.14285714285714 | ime passed: 331.74607515335083
+Coverage: 72.0 | Fitness: 70.705 | ime passed: 270.9593939781189
+Coverage: 73.0 | Fitness: 71.79636363636364 | ime passed: 268.2962942123413
+Coverage: 69.0 | Fitness: 67.99777777777777 | ime passed: 266.5508716106415
+Coverage: 69.0 | Fitness: 67.69666666666666 | ime passed: 235.5974349975586
+Coverage: 71.0 | Fitness: 70.02 | ime passed: 228.76904439926147
+Coverage: 65.0 | Fitness: 64.075 | ime passed: 194.23071932792664
+Coverage: 71.0 | Fitness: 69.902 | ime passed: 188.24890422821045
+Coverage: 74.0 | Fitness: 73.10000000000001 | ime passed: 204.40534591674805
+Coverage: 58.0 | Fitness: 57.0375 | ime passed: 197.1149480342865
+Coverage: 79.0 | Fitness: 77.60615384615384 | ime passed: 224.5061798095703
+Coverage: 71.0 | Fitness: 69.97333333333333 | ime passed: 200.8299045562744
+Coverage: 69.0 | Fitness: 67.72666666666666 | ime passed: 250.25415086746216
+Coverage: 72.0 | Fitness: 71.00666666666666 | ime passed: 312.4236390590668
+Coverage: 76.0 | Fitness: 74.98222222222222 | ime passed: 258.5224242210388
+Coverage: 75.0 | Fitness: 73.89999999999999 | ime passed: 225.49527859687805
+Coverage: 65.0 | Fitness: 63.95555555555555 | ime passed: 207.73072123527527
+Coverage: 67.0 | Fitness: 65.96 | ime passed: 233.19291949272156
+Coverage: 74.0 | Fitness: 72.60307692307693 | ime passed: 220.0986647605896
