@@ -187,7 +187,7 @@ def mutate(solution):
 
     return new_solution
 
-
+#region Paramters
 ###################################################################
 # Hill Climbing, using random ascent
 ###################################################################
@@ -195,7 +195,7 @@ def mutate(solution):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_hard_to_find/hard_to_find_metadata.json"
 
 # Fitness function
 fitness_function = "statement"
@@ -279,6 +279,8 @@ for opt, arg in opts:
 
         if length_test_penalty < 1:
             raise Exception("length_test_penalty cannot be < 1.")
+
+#endregion
 
 # Import metadata
 metadata = parse_metadata(metadata_location)

@@ -79,6 +79,18 @@ def delete_random_action(test_suite):
     return test_suite
 
 
+def replace_random_action(test_suite):
+    suite_size = len(test_suite) - 1
+    test_case_selected = random.randint(0, suite_size)
+
+    if len(test_suite[test_case_selected]) > 1:
+        num_actions = len(test_suite[test_case_selected]) - 1
+        action_selected = random.randint(1, num_actions)
+        test_suite[test_case_selected].remove(
+            test_suite[test_case_selected][action_selected])
+        test_suite[test_case_selected].append(generate_action(metadata))
+    return test_suite
+
 # Add a random action to an existing test
 def add_random_action(test_suite):
     suite_size = len(test_suite) - 1
@@ -203,20 +215,47 @@ def mutate(solution):
 
     return new_solution
 
-def CalculateInitialTemperature(solution):
-    listOfDifferentFitness = []
+def closeNeighborMuation(solution):
+    """
+    When we mutate a solution, we make one small change to it. That change can
+    include: — Add an action to a test case — Delete an action from a test case
+    — Change parameters of an action (limited range of values, increment value
+    by [-10, +10]) — Add a new test case to the suite — Remove a test case from
+    the suite
+    """
+
+    new_solution = Solution()
+    suite = copy.deepcopy(solution.test_suite)
+    action = random.randint(1, 5)
+
+    if action == 1:  # replace an action
+        new_solution.test_suite = replace_random_action(suite)
+        print("Replaced action")
+        
+    elif action == 3:  # change random parameter
+        new_solution.test_suite = change_random_parameter(suite)
+        print("Changed random parameter")        
+
+
+    return new_solution
+
+def CalculateInitialTemperature(solution, max_test_cases, max_actions, metadata):
+    #listOfDifferentFitness = []
     #tmpSolution = Solution()
-    tmpSolution = solution
-    for i in range(1,10):
-        #tmpSolution.test_suite = generate_test_suite(metadata, max_test_cases,
-        #                                          max_actions)
-        tmpSolution = mutate(solution)
-        calculate_fitness(metadata, fitness_function, num_tests_penalty,            
-                  length_test_penalty, tmpSolution)
-        listOfDifferentFitness.append(tmpSolution.fitness)
+    #tmpSolution = solution   
+    avarage_length = (max_actions*max_test_cases)/2
+    avarage_fitness = 50 - float(avarage_length / length_test_penalty)
+    num_of_action = 0
+    #num_of_params = 0
+    for action in metadata['action']:
+        num_of_action += 1
+        #for param in action['parameters']:
+        #    num_of_params += 1
+    best_fitness = 100 - float(num_of_action/length_test_penalty)
+    #listOfDifferentFitness.append(tmpSolution.fitness)
     #listOfDifferentFitness.append(100)
     #listOfDifferentFitness.append(0)
-    return (statistics.pstdev(listOfDifferentFitness))
+    return (statistics.pstdev(0,avarage_fitness,best_fitness))
 
 
 
@@ -228,16 +267,16 @@ def CalculateInitialTemperature(solution):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_hard_to_find/hard_to_find_metadata.json"
 
-# Fitness function
+# Fitness function i.e "branch" or "statement"
 fitness_function = "statement"
 
 # Maximum number of test cases in a generated suite
-max_test_cases = 20
+max_test_cases = 1
 
 # Maximum number of actions in a generated test case
-max_actions = 20
+max_actions = 1
 
 # Maximum number of generations == length of the Markov-Chain
 max_gen = 200
@@ -340,7 +379,7 @@ print('Initial fitness: ' + str(solution_current.fitness))
 gen = 1
 restarts = 0
 
-sigma = CalculateInitialTemperature(solution_best)
+sigma = CalculateInitialTemperature(solution_best,max_test_cases)
 
 while gen <= max_gen and restarts <= max_restarts:
     tries = 1
@@ -353,14 +392,14 @@ while gen <= max_gen and restarts <= max_restarts:
     # Try random mutations until we see a solutions that is accepted by probabilty rho
     while tries < max_tries and not changed and not solutionFound:
         
-        solution_new = mutate(solution_current)
+        solution_new = closeNeighborMuation(solution_current)
         calculate_fitness(metadata, fitness_function, num_tests_penalty,
                           length_test_penalty, solution_new)
         #calculate acceptance criteria for Solutions
         fitnessDifference = abs(solution_current.fitness - solution_new.fitness)
         rho = math.exp(-fitnessDifference/sigma)
        
-        #roll for accepting the 
+        #roll for accepting the worse Solution
         uniformDist = np.random.uniform(1,0,1)
         if(uniformDist  < rho):
             solution_current = copy.deepcopy(solution_new)

@@ -6,7 +6,7 @@ class Calc:
     def subtract(self, x: int, y: int):
         return x - y
 
-    def multiply(self, x, y):
+    def multiply(self, x:int, y:int):
         return x * y
 
     def divide(self, x: int, y: int):

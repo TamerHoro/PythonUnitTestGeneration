@@ -264,7 +264,7 @@ def uniform_crossover(parent1, parent2):
 
     return child1, child2
 
-
+#region Paramters
 ###################################################################
 # Genetic Algorithm
 ###################################################################
@@ -392,6 +392,8 @@ for opt, arg in opts:
 
         if length_test_penalty < 1:
             raise Exception("length_test_penalty cannot be < 1.")
+
+#endregion
 
 # Import metadata.
 metadata = parse_metadata(metadata_location)

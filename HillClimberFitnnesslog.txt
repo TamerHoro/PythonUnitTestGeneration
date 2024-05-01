@@ -23,3 +23,24 @@ Coverage: 63.0 | Fitness: 62.02666666666667 | Time passed: 182.34879112243652
 Coverage: 64.0 | Fitness: 62.912 | Time passed: 176.39059042930603
 Coverage: 69.0 | Fitness: 67.894 | Time passed: 263.1808567047119
 Coverage: 74.0 | Fitness: 72.77818181818182 | Time passed: 278.88949942588806
+--------------------------------------------------------
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 230.46883964538574
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 192.16006302833557
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 260.8809061050415
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 150.17120027542114
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 236.13054418563843
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 231.88776111602783
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 187.0192449092865
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 209.57859206199646
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 220.35556888580322
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 180.28961777687073
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 216.5568654537201
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 188.92957663536072
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 193.2278184890747
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 285.670921087265
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 196.12045979499817
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 187.82937669754028
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 198.3167176246643
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 182.1853585243225
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 241.4234082698822
+Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 184.0390968322754
