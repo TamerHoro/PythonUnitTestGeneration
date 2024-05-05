@@ -80,7 +80,7 @@ def delete_random_action(test_suite):
 
 
 def replace_random_action(test_suite):
-    suite_size = len(test_suite) - 1
+    suite_size = len(test_suite) -1
     test_case_selected = random.randint(0, suite_size)
 
     if len(test_suite[test_case_selected]) > 1:
@@ -217,29 +217,31 @@ def mutate(solution):
 
 def closeNeighborMuation(solution):
     """
-    When we mutate a solution, we make one small change to it. That change can
-    include: — Add an action to a test case — Delete an action from a test case
-    — Change parameters of an action (limited range of values, increment value
-    by [-10, +10]) — Add a new test case to the suite — Remove a test case from
-    the suite
+    When we make a close neighbor mutatio, we make one small change to the test suite. That change can
+    is either replacing an action with another or changing a random parameter.
     """
 
     new_solution = Solution()
     suite = copy.deepcopy(solution.test_suite)
-    action = random.randint(1, 5)
+    action = random.randint(1, 2)
 
     if action == 1:  # replace an action
         new_solution.test_suite = replace_random_action(suite)
-        print("Replaced action")
+        #print("Replaced action")
         
-    elif action == 3:  # change random parameter
+    elif action == 2:  # change random parameter
         new_solution.test_suite = change_random_parameter(suite)
-        print("Changed random parameter")        
+        #print("Changed random parameter")        
 
 
     return new_solution
 
-def CalculateInitialTemperature(solution, max_test_cases, max_actions, metadata):
+def bestPossibleFitness():  
+   num_of_action = len(metadata['actions'])
+   return float(100 - num_of_action/length_test_penalty)
+
+
+def CalculateInitialTemperature(max_test_cases, max_actions, metadata):
     #listOfDifferentFitness = []
     #tmpSolution = Solution()
     #tmpSolution = solution   
@@ -247,17 +249,59 @@ def CalculateInitialTemperature(solution, max_test_cases, max_actions, metadata)
     avarage_fitness = 50 - float(avarage_length / length_test_penalty)
     num_of_action = 0
     #num_of_params = 0
-    for action in metadata['action']:
+    for action in metadata['actions']:
         num_of_action += 1
         #for param in action['parameters']:
         #    num_of_params += 1
-    best_fitness = 100 - float(num_of_action/length_test_penalty)
+    best_fitness = bestPossibleFitness()
     #listOfDifferentFitness.append(tmpSolution.fitness)
     #listOfDifferentFitness.append(100)
     #listOfDifferentFitness.append(0)
-    return (statistics.pstdev(0,avarage_fitness,best_fitness))
+    return (statistics.pstdev([0,avarage_fitness,best_fitness]))
 
+def CalculateInitialTemperature2(solution):
+    listOfDifferentFitness = []
+    #tmpSolution = Solution()
+    tmpSolution = solution
+    for i in range(1,10):
+        #tmpSolution.test_suite = generate_test_suite(metadata, max_test_cases,
+        #                                          max_actions)
+        tmpSolution = mutate(solution)
+        calculate_fitness(metadata, fitness_function, num_tests_penalty,            
+                  length_test_penalty, tmpSolution)
+        listOfDifferentFitness.append(tmpSolution.fitness)
+    #listOfDifferentFitness.append(100)
+    #listOfDifferentFitness.append(0)
+    return (statistics.pstdev(listOfDifferentFitness))
 
+def CalculateInitialTemperature3(solution):
+    listOfDifferentFitness = []
+    #tmpSolution = Solution()
+    tmpSolution = solution
+    improvedTransition = 0
+    notImproved = 0
+    deltaFitness = 0
+    for i in range(1,10):
+        #tmpSolution.test_suite = generate_test_suite(metadata, max_test_cases,
+        #                                          max_actions)
+        tmpSolution = mutate(solution)
+        calculate_fitness(metadata, fitness_function, num_tests_penalty,            
+                  length_test_penalty, tmpSolution)
+        listOfDifferentFitness.append(tmpSolution.fitness)
+        
+        if(tmpSolution.fitness >solution.fitness):
+            improvedTransition += 1
+            deltaFitness = tmpSolution.fitness - solution.fitness
+        else:
+            notImproved += 1
+            
+    avarageFitnessDif =  sum(listOfDifferentFitness)/len(listOfDifferentFitness)       
+    
+    initialTemp = avarageFitnessDif/(math.log(notImproved/(notImproved*0.8 - improvedTransition*(1-0.8))))
+    
+    #listOfDifferentFitness.append(100)
+    #listOfDifferentFitness.append(0)
+    return (initialTemp)
 
 #region Parameter
 ###################################################################
@@ -379,14 +423,20 @@ print('Initial fitness: ' + str(solution_current.fitness))
 gen = 1
 restarts = 0
 
-sigma = CalculateInitialTemperature(solution_best,max_test_cases)
+proposedworseSolutions = 0
+acceptedworseSolutions = 0
+bestFitness = bestPossibleFitness()
+
+#sigma = CalculateInitialTemperature(max_test_cases, max_actions, metadata)
+sigma = CalculateInitialTemperature3(solution_best)
+
 
 while gen <= max_gen and restarts <= max_restarts:
     tries = 1
     changed = False
-    solutionFound = False
+    solutionFound = False    
 
-    if solution_best.fitness >= 98:
+    if solution_best.fitness >= bestFitness :
             solutionFound = True
     
     # Try random mutations until we see a solutions that is accepted by probabilty rho
@@ -396,20 +446,20 @@ while gen <= max_gen and restarts <= max_restarts:
         calculate_fitness(metadata, fitness_function, num_tests_penalty,
                           length_test_penalty, solution_new)
         #calculate acceptance criteria for Solutions
-        fitnessDifference = abs(solution_current.fitness - solution_new.fitness)
+        fitnessDifference = solution_current.fitness - solution_new.fitness
         rho = math.exp(-fitnessDifference/sigma)
        
         #roll for accepting the worse Solution
         uniformDist = np.random.uniform(1,0,1)
-        if(uniformDist  < rho):
-            solution_current = copy.deepcopy(solution_new)
-            changed = True
-            print("new solution accepted")
-        else:
-            print("new solution declined")
-        
-        sigma *= cooling_rate
-        
+        if solution_new.fitness < solution_current.fitness:
+            proposedworseSolutions += 1
+            if(uniformDist  < rho):
+                solution_current = copy.deepcopy(solution_new)
+                changed = True
+                print("worse solution accepted")
+                acceptedworseSolutions += 1
+            else:
+                print("worse solution declined")
         # If the solution is an improvement, make it the new solution.
         if solution_new.fitness > solution_current.fitness:
             solution_current = copy.deepcopy(solution_new)
@@ -418,12 +468,19 @@ while gen <= max_gen and restarts <= max_restarts:
             # If it is the best solution seen so far, then store it.
             if solution_new.fitness > solution_best.fitness:
                 solution_best = copy.deepcopy(solution_current)
+            
+            if(proposedworseSolutions!=0):
+                acceptencerate = acceptedworseSolutions/proposedworseSolutions    
+            else:
+                acceptencerate = 1            
             print(
                 "Best fitness at generation %d: %.8f, number of tests: %d, "
-                "average test length: %d, mutation attempts: %d" % (
+                "average test length: %d, mutation attempts: %d, acceptance rate: %.8f" % (
                     gen, solution_best.fitness, len(solution_best.test_suite),
-                    solution_best.average_length(), tries))
-
+                    solution_best.average_length(), tries, acceptencerate)
+                )
+            
+        sigma *= cooling_rate        
         tries += 1
 
     # Reset the search if no better mutant is found within a set number of
@@ -438,6 +495,8 @@ while gen <= max_gen and restarts <= max_restarts:
                           length_test_penalty, solution_current)
         print("Gen: " + str(gen) + ", RESET, new fitness: " + str(
             solution_current.fitness))
+        #
+        # sigma = CalculateInitialTemperature3(solution_best)
 
     # Increment generation
     gen += 1

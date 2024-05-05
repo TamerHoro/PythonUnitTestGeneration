@@ -51,7 +51,7 @@ def branch_fitness(metadata, solution):
                 if coverage[2]== "0":
                     fitness += coverage[2]
     
-    print("Coverage: "+fitness)
+    #print("Coverage: "+fitness)
     return float(fitness)
 
 

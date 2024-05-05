@@ -46,7 +46,10 @@ def generate_test_case(metadata, max_actions):
     test_case.append(generate_constructor(metadata))
 
     # Generate actions
-    num_actions = random.randint(0, max_actions)
+    if max_actions <= 1:
+        num_actions = max_actions
+    else:
+        num_actions = random.randint(1, max_actions)
     for j in range(num_actions):
         test_case.append(generate_action(metadata))
 

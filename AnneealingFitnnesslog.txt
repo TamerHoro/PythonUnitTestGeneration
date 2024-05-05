@@ -45,3 +45,4 @@ Coverage: 88.0 | Fitness: 87.84 | Time passed: 134.9670488834381
 Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 133.25346446037292
 Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 116.33083844184875
 Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 131.3872265815735
+Coverage: 64.0 | Fitness: 63.86

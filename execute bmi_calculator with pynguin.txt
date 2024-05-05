@@ -1,2 +1,2 @@
 
-pynguin --project-path C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example --output-path C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/pynguin-results --module-name bmi_calculator -v
+pynguin --project-path C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_hard_to_find --output-path C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_hard_to_find/pynguin-results --module-name hard_to_find -v
