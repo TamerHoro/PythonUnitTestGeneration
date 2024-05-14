@@ -325,7 +325,7 @@ except getopt.GetoptError:
     sys.exit(2)
 
 for opt, arg in opts:
-    if opt == "-h":
+    if opt == "-g":
         print(
             "genetic_algorithm.py -m <metadata file location> -c <maximum "
             "number of test cases> -a <maximum number of actions> -g <maximum "

@@ -4,9 +4,5 @@ import pytest
 
 def test_0():
 	cut = hard_to_find.HardToFind()
-	cut.easymethod(52718,41810,85310)
-	cut.hardmethod(66783,29977,61400)
-
-
-def test_1():
-	cut = hard_to_find.HardToFind()
+	cut.easymethod(36368,25286,33920)
+	cut.hardmethod(16339,2929,57811)

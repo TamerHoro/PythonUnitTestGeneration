@@ -198,24 +198,35 @@ def mutate(solution):
     action = random.randint(1, 5)
 
     if action == 1:  # delete an action
-        new_solution.test_suite = delete_random_action(suite)
-        print("Deleted action")
+        totallength = solution.total_length()
+        if(totallength>1):
+            new_solution.test_suite = delete_random_action(suite)
+            #print("Deleted action")
     elif action == 2:  # add an action
-        new_solution.test_suite = add_random_action(suite)
-        print("Added action")
+        totallength = solution.total_length()
+        if(totallength<max_actions):
+            new_solution.test_suite = add_random_action(suite)
+            #print("Added action")
     elif action == 3:  # change random parameter
         new_solution.test_suite = change_random_parameter(suite)
-        print("Changed random parameter")        
+        #print("Changed random parameter")        
     elif action == 4:  # add a test case
-        new_solution.test_suite = add_test_case(suite)
-        print("Added test case")  
+        numberOfCases= solution.numberofCases()
+        if(numberOfCases<max_test_cases):
+            new_solution.test_suite = add_test_case(suite)
+            #print("Added test case")  
     elif action == 5:  # delete a test case
-        new_solution.test_suite = remove_test_case(suite)
-        print("Removed test case")  
+        numberOfCases= solution.numberofCases()
+        if(numberOfCases>1):        
+            new_solution.test_suite = remove_test_case(suite)
+            #print("Removed test case")  
+    if new_solution.total_length() == 0:
+        print("No changes could be made")  
+        return solution
 
     return new_solution
 
-def closeNeighborMuation(solution):
+def closeNeighborMutation(solution):
     """
     When we make a close neighbor mutatio, we make one small change to the test suite. That change can
     is either replacing an action with another or changing a random parameter.
@@ -239,7 +250,6 @@ def closeNeighborMuation(solution):
 def bestPossibleFitness():  
    num_of_action = len(metadata['actions'])
    return float(100 - num_of_action/length_test_penalty)
-
 
 def CalculateInitialTemperature(max_test_cases, max_actions, metadata):
     #listOfDifferentFitness = []
@@ -276,31 +286,27 @@ def CalculateInitialTemperature2(solution):
 
 def CalculateInitialTemperature3(solution):
     listOfDifferentFitness = []
-    #tmpSolution = Solution()
-    tmpSolution = solution
+    #tmpSolution = copy.deepcopy(solution)
     improvedTransition = 0
     notImproved = 0
-    deltaFitness = 0
+    sumDeltaFitness = 0
     for i in range(1,10):
-        #tmpSolution.test_suite = generate_test_suite(metadata, max_test_cases,
-        #                                          max_actions)
         tmpSolution = mutate(solution)
         calculate_fitness(metadata, fitness_function, num_tests_penalty,            
                   length_test_penalty, tmpSolution)
         listOfDifferentFitness.append(tmpSolution.fitness)
         
-        if(tmpSolution.fitness >solution.fitness):
+        if(solution.fitness >listOfDifferentFitness[-1]):
             improvedTransition += 1
-            deltaFitness = tmpSolution.fitness - solution.fitness
+            sumDeltaFitness += abs(tmpSolution.fitness - solution.fitness)
         else:
             notImproved += 1
-            
-    avarageFitnessDif =  sum(listOfDifferentFitness)/len(listOfDifferentFitness)       
     
-    initialTemp = avarageFitnessDif/(math.log(notImproved/(notImproved*0.8 - improvedTransition*(1-0.8))))
-    
-    #listOfDifferentFitness.append(100)
-    #listOfDifferentFitness.append(0)
+    if(improvedTransition!= 0):        
+        avarageFitnessDif = sumDeltaFitness/improvedTransition  
+        initialTemp = avarageFitnessDif/(math.log(notImproved/(notImproved*0.8 - improvedTransition*(1-0.8))))
+    else:
+        initialTemp = 0
     return (initialTemp)
 
 #region Parameter
@@ -317,19 +323,19 @@ metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/
 fitness_function = "statement"
 
 # Maximum number of test cases in a generated suite
-max_test_cases = 1
+max_test_cases = 20
 
 # Maximum number of actions in a generated test case
-max_actions = 1
+max_actions = 20
 
 # Maximum number of generations == length of the Markov-Chain
-max_gen = 200
+max_gen = 10
 
 # Maximum number of restarts
-max_restarts = 20
+max_restarts = 10
 
 # Maximum number of mutations to try before restarting
-max_tries = 50
+max_tries = 10
 
 # Cooling rate Alpha
 cooling_rate = 0.95
@@ -338,18 +344,21 @@ cooling_rate = 0.95
 num_tests_penalty = 10
 
 # Test length penalty
-length_test_penalty = 50
+length_test_penalty = 30
+
+# Choice of Neighborhood operator
+nbOperator = 0
 
 # Get command-line arguments
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "hm:c:a:g:r:t:z:l:")
+    opts, args = getopt.getopt(sys.argv[1:], "hm:c:a:g:r:t:z:l:o:")
 except getopt.GetoptError:
     print(
         "hill_climber.py -m <metadata file location> -c <maximum number of test "
         "cases> -a <maximum number of actions> -g <maximum number of "
         "generations> -r <maximum number of restarts> -t <maximum number of "
         "mutations before restarting> -z <test suite size penalty> -l <test "
-        "length penalty>")
+        "length penalty> -o <Neighborhood Operator>")
     sys.exit(2)
 
 for opt, arg in opts:
@@ -359,7 +368,7 @@ for opt, arg in opts:
             "test cases> -a <maximum number of actions> -g <maximum number of "
             "generations> -r <maximum number of restarts> -t <maximum number of "
             "mutations before restarting> -z <test suite size penalty> -l <test "
-            "length penalty>  -cool <Cooling rate>")
+            "length penalty> -cool <Cooling rate> -o <Neighborhood Operator>")
         sys.exit()
     elif opt == "-m":
         metadata_location = arg
@@ -398,10 +407,13 @@ for opt, arg in opts:
 
         if length_test_penalty < 1:
             raise Exception("length_test_penalty cannot be < 1.")
-    elif opt == "-cool":
-        cooling_rate = int(arg)
-        if cooling_rate < 0.5:
-            raise Exception("cooling_rate cannot be < 0.5")
+    # elif opt == "-cool":
+    #     cooling_rate = int(arg)
+    #     if cooling_rate < 0.5:
+    #         raise Exception("cooling_rate cannot be < 0.5")
+    elif opt == "-o":        
+        nbOperator = int(arg)
+   
 #endregion
 
 # Import metadata
@@ -426,6 +438,8 @@ restarts = 0
 proposedworseSolutions = 0
 acceptedworseSolutions = 0
 bestFitness = bestPossibleFitness()
+acceptancerate = 0
+acceptenceRateList = []
 
 #sigma = CalculateInitialTemperature(max_test_cases, max_actions, metadata)
 sigma = CalculateInitialTemperature3(solution_best)
@@ -439,20 +453,27 @@ while gen <= max_gen and restarts <= max_restarts:
     if solution_best.fitness >= bestFitness :
             solutionFound = True
     
-    # Try random mutations until we see a solutions that is accepted by probabilty rho
-    while tries < max_tries and not changed and not solutionFound:
+    # Try random mutations until we see a solutions that is accepted by probabilty rho or better
+    while tries < max_tries and sigma > 0.01 and not changed and not solutionFound:
         
-        solution_new = closeNeighborMuation(solution_current)
+        if(nbOperator == 1):
+            solution_new = closeNeighborMutation(solution_current)
+            #print('close neighbor')
+        else:
+            solution_new = mutate(solution_current)
+        
         calculate_fitness(metadata, fitness_function, num_tests_penalty,
                           length_test_penalty, solution_new)
-        #calculate acceptance criteria for Solutions
-        fitnessDifference = solution_current.fitness - solution_new.fitness
-        rho = math.exp(-fitnessDifference/sigma)
        
-        #roll for accepting the worse Solution
-        uniformDist = np.random.uniform(1,0,1)
+       
+        # If the solution is worse, maybe accept it.
         if solution_new.fitness < solution_current.fitness:
+             #calculate acceptance criteria for Solutions
+            fitnessDifference = solution_current.fitness - solution_new.fitness
+            rho = math.exp(-fitnessDifference/sigma)
             proposedworseSolutions += 1
+             #roll for accepting the worse Solution
+            uniformDist = np.random.uniform(1,0,1)
             if(uniformDist  < rho):
                 solution_current = copy.deepcopy(solution_new)
                 changed = True
@@ -460,25 +481,28 @@ while gen <= max_gen and restarts <= max_restarts:
                 acceptedworseSolutions += 1
             else:
                 print("worse solution declined")
+            
+            acceptancerate = acceptedworseSolutions/proposedworseSolutions   
         # If the solution is an improvement, make it the new solution.
-        if solution_new.fitness > solution_current.fitness:
+        elif solution_new.fitness > solution_current.fitness:
             solution_current = copy.deepcopy(solution_new)
             changed = True
 
             # If it is the best solution seen so far, then store it.
             if solution_new.fitness > solution_best.fitness:
                 solution_best = copy.deepcopy(solution_current)
-            
-            if(proposedworseSolutions!=0):
-                acceptencerate = acceptedworseSolutions/proposedworseSolutions    
-            else:
-                acceptencerate = 1            
-            print(
-                "Best fitness at generation %d: %.8f, number of tests: %d, "
-                "average test length: %d, mutation attempts: %d, acceptance rate: %.8f" % (
-                    gen, solution_best.fitness, len(solution_best.test_suite),
-                    solution_best.average_length(), tries, acceptencerate)
-                )
+
+
+         
+          
+        print(
+            "Best fitness at generation %d: %.8f, number of tests: %d, "
+            "average test length: %d, mutation attempts: %d, acceptance rate: %.8f" % (
+                gen, solution_best.fitness, len(solution_best.test_suite),
+                solution_best.average_length(), tries, acceptancerate)
+            )
+        
+        acceptenceRateList.append(acceptancerate)   
             
         sigma *= cooling_rate        
         tries += 1
@@ -505,7 +529,11 @@ while gen <= max_gen and restarts <= max_restarts:
 coverage = statement_fitness(metadata, solution_best)
 totalSuiteLength = solution_best.total_length()
 f = open("AnneealingFitnnesslog.txt", "a")
-f.write('Coverage: '+str(coverage)+' | Fitness: '+str(solution_best.fitness)) # + '\n'
+if not acceptenceRateList:
+    f.write('Coverage: '+str(coverage)+' | Fitness: '+str(solution_best.fitness)+ ' | Avarage acceptance for each iteration: no worse solution was proposed')
+else:
+    f.write('Coverage: '+str(coverage)+' | Fitness: '+str(solution_best.fitness)+ ' | Avarage acceptance for each iteration: ' + str(sum(acceptenceRateList)/len(acceptenceRateList))) # + '\n'
+    
 f.close()
 
 # Print information about the best test suite seen
@@ -515,6 +543,6 @@ print("Best Fitness: " + str(solution_best.fitness))
 print("Number of generations used: " + str(gen))
 print("Number of tests: " + str(len(solution_best.test_suite)))
 print("Total test length: " + str(solution_best.total_length()))
-
+print("Acceptance for each iteration: " + str(acceptenceRateList))
 # Print the best test suite to a file
 write_to_file(metadata, solution_best.test_suite, "annealing")

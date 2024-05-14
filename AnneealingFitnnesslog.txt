@@ -46,3 +46,344 @@ Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 133.25346446037292
 Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 116.33083844184875
 Coverage: 88.0 | Fitness: 87.75999999999999 | Time passed: 131.3872265815735
 Coverage: 64.0 | Fitness: 63.86
+------------------------------------------
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 10.424747467041016
+Coverage: 85.0 | Fitness: 84.10000000000001 | Time passed: 9.155674695968628
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 15.809822797775269
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 11.357502460479736
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 12.343820333480835
+Coverage: 85.0 | Fitness: 84.3 | Time passed: 11.532576084136963
+Coverage: 85.0 | Fitness: 84.3 | Time passed: 10.528949975967407
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 10.89037036895752
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 12.459685802459717
+Coverage: 85.0 | Fitness: 84.30000000000001 | Time passed: 12.778032302856445
+Coverage: 85.0 | Fitness: 84.30000000000001 | Time passed: 16.84988498687744
+Coverage: 85.0 | Fitness: 84.30000000000001 | Time passed: 17.177815437316895
+Coverage: 85.0 | Fitness: 84.36666666666667 | Time passed: 13.222634077072144
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 15.176661491394043
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 10.87645936012268
+Coverage: 60.0 | Fitness: 84.30000000000001 | Time passed: 11.260447025299072
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 8.900782585144043
+Coverage: 85.0 | Fitness: 84.30000000000001 | Time passed: 10.073800802230835
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 12.824869155883789
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 16.38614296913147
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 28.72177243232727
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 21.46291160583496
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 25.059895277023315
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 31.318636655807495
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 26.7274329662323
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 27.182018041610718
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 23.74483871459961
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 35.83543658256531
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 25.15037178993225
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 30.09586191177368
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 29.79703164100647
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 34.15165090560913
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 27.7807137966156
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 22.27149486541748
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 22.897766590118408
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 25.994346857070923
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 27.09784722328186
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 24.302892446517944
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 20.49261784553528
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 20.043500423431396
+-----------------------------------------------------------
+Coverage: 85.0 | Fitness: 84.3 | Time passed: 12.908878087997437
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 13.083012580871582
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 10.418403625488281
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 15.757021188735962
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 10.359713792800903
+Coverage: 85.0 | Fitness: 84.30000000000001 | Time passed: 13.371693134307861
+Coverage: 85.0 | Fitness: 84.3 | Time passed: 11.543007373809814
+Coverage: 85.0 | Fitness: 84.3 | Time passed: 14.112910985946655
+Coverage: 85.0 | Fitness: 84.3 | Time passed: 13.374908208847046
+Coverage: 85.0 | Fitness: 84.36666666666667 | Time passed: 11.018769025802612
+Coverage: 85.0 | Fitness: 84.23333333333333 | Time passed: 13.32816481590271
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 16.078337907791138
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 12.8897864818573
+Coverage: 85.0 | Fitness: 84.39999999999999 | Time passed: 14.545453786849976
+---------------------------------------------------------------------------
+
+Coverage: 40.0 | Fitness: 39.5Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.283884286880493
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.227422952651978
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 8.263812065124512
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.246520042419434
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.160085201263428
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.334420204162598
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.271127223968506
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.33973503112793
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.317858219146729
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.326895952224731
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.328778505325317
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.27850079536438
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.34210991859436
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.452678203582764
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.170997142791748
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.139815092086792
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.171696424484253
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.15730595588684
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.1728515625
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.1844162940979
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.280024528503418
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.252344369888306
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.330325603485107
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.363410711288452
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.415585994720459
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.263578176498413
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.235487699508667
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.24398946762085
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 8.365153074264526
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.336045742034912
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.30178713798523
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.299480676651001
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.247269868850708
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 8.417963981628418
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.307734251022339
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 8.494960308074951
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 12.70856761932373
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 9.31461215019226
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 82.31751894950867
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 31.789857149124146
+Coverage: 40.0 | Fitness: 39.5Coverage: 40.0 | Fitness: 39.5Coverage: 60.0 | Fitness: 59.5
+-----------------------------------------------------------------
+HardToFind Example
+defaul Neighbor operator
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 45.38087582588196
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 32.794352531433105
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 40.876832485198975
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 43.806326389312744
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 36.192097663879395
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 42.333296060562134
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 45.027470111846924
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 32.38093900680542
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 37.83623695373535
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 40.72171711921692
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 41.04076313972473
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 45.86564636230469
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 9.95974588394165
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 45.605337381362915
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 9.91127896308899
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 41.23925590515137
+Coverage: 60.0 | Fitness: 39.5 | Time passed: 37.32815718650818
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 41.466967821121216
+Coverage: 40.0 | Fitness: 39.5 | Time passed: 41.77612805366516
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 46.12528896331787
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 40.190747022628784
+close Neighbor operator
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 26.412174940109253
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 32.41005825996399
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 16.530916929244995
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 41.92707943916321
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 18.074052810668945
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 34.20919680595398
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 33.89785146713257
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 28.874237298965454
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 29.192930936813354
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 23.863499879837036
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 31.3226580619812
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 30.04488730430603
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 32.588178634643555
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 31.880706548690796
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 34.25632905960083
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 25.82107448577881
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 29.032772541046143
+Coverage: 60.0 | Fitness: 59.5 | Time passed: 24.0006844997406
+Coverage: 40.0 | Fitness: 59.5 | Time passed: 35.867268323898315
+---------------------------------
+BMICalc
+default operator
+
+Coverage: 41.0 | Fitness: 40.153333333333336 Acceptance for each iteration: [] | Time passed: 10.478566646575928
+Coverage: 51.0 | Fitness: 50.08571428571428 Acceptance for each iteration: [0.0, 0.3333333333333333, 0.4, 0.4, 0.4, 0.4, 0.3333333333333333, 0.3333333333333333] | Time passed: 15.14868974685669
+Coverage: 42.0 | Fitness: 41.422222222222224 Acceptance for each iteration: [-1, -1, 0.0, 0.5, 0.75, 0.75, 0.5] | Time passed: 13.003942966461182
+Coverage: 51.0 | Fitness: 50.10666666666667 Acceptance for each iteration: [-1, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0] | Time passed: 11.079476594924927
+Coverage: 45.0 | Fitness: 42.64333333333333 Acceptance for each iteration: [] | Time passed: 12.661517858505249
+Coverage: 53.0 | Fitness: 52.16 Acceptance for each iteration: [0.0, 0.0, 0.25, 0.42857142857142855, 0.42857142857142855, 0.3333333333333333] | Time passed: 21.97269868850708
+Coverage: 59.0 | Fitness: 58.35 Acceptance for each iteration: [-1, 1.0, 0.6666666666666666, 0.6666666666666666, 0.6, 0.6, 0.6] | Time passed: 18.661773204803467
+Coverage: 60.0 | Fitness: 58.84074074074074 Acceptance for each iteration: [1.0, 1.0, 1.0, 1.0, 1.0] | Time passed: 14.50513243675232
+Coverage: 44.0 | Fitness: 42.289743589743594 Acceptance for each iteration: [-1, 1.0, 0.8571428571428571] | Time passed: 15.71567678451538
+Coverage: 57.0 | Fitness: 56.19444444444444 Acceptance for each iteration: [-1, -1, -1, 0.5, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666] | Time passed: 13.329009771347046
+Coverage: 39.0 | Fitness: 38.416666666666664 Acceptance for each iteration: [0.6666666666666666, 0.75, 0.75, 0.75, 0.75, 0.75, 0.75] | Time passed: 13.621332883834839
+Coverage: 42.0 | Fitness: 41.275 Acceptance for each iteration: [] | Time passed: 11.47907543182373
+Coverage: 53.0 | Fitness: 51.74583333333334 Acceptance for each iteration: [-1, 0.0, 0.5, 0.5, 0.5] | Time passed: 13.00520372390747
+Coverage: 51.0 | Fitness: 49.60333333333333 Acceptance for each iteration: [0.75, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666] | Time passed: 17.04100728034973
+Coverage: 58.0 | Fitness: 56.94285714285714 Acceptance for each iteration: [1.0, 0.5, 0.5, 0.3333333333333333, 0.25, 0.25, 0.25, 0.2, 0.2] | Time passed: 17.946232795715332
+Coverage: 54.0 | Fitness: 53.08888888888889 Acceptance for each iteration: [0.0, 0.5, 0.75, 0.75, 0.75, 0.75] | Time passed: 13.59838318824768
+Coverage: 51.0 | Fitness: 49.681481481481484 Acceptance for each iteration: [-1, 1.0, 1.0, 1.0, 0.6666666666666666, 0.5, 0.5] | Time passed: 16.700076580047607
+Coverage: 45.0 | Fitness: 44.18333333333333 Acceptance for each iteration: [-1, -1, -1, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666, 0.6666666666666666] | Time passed: 13.32655930519104
+Coverage: 56.0 | Fitness: 54.24761904761905 Acceptance for each iteration: [1.0, 0.75, 0.75, 0.8333333333333334] | Time passed: 19.60401964187622
+Coverage: 57.0 | Fitness: 55.45757575757575 Acceptance for each iteration: [] | Time passed: 12.057947635650635
+
+close Neighbor
+Coverage: 31.0 | Fitness: 30.5 Acceptance for each iteration: [] | Time passed: 27.39336371421814
+Coverage: 44.0 | Fitness: 41.97708333333333 Acceptance for each iteration: [] | Time passed: 12.483741044998169
+Coverage: 40.0 | Fitness: 39.21666666666667 Acceptance for each iteration: [] | Time passed: 56.44877743721008
+Coverage: 61.0 | Fitness: 58.99411764705882 Acceptance for each iteration: [0.0, 0.0] | Time passed: 46.2154586315155
+Coverage: 44.0 | Fitness: 42.857142857142854 Acceptance for each iteration: [0.0, 0.0] | Time passed: 37.63255715370178
+Coverage: 46.0 | Fitness: 43.57333333333333 Acceptance for each iteration: [] | Time passed: 12.412887334823608
+Coverage: 35.0 | Fitness: 34.46666666666666 Acceptance for each iteration: [] | Time passed: 10.816275835037231
+Coverage: 43.0 | Fitness: 42.31666666666666 Acceptance for each iteration: [] | Time passed: 11.345588684082031
+Coverage: 52.0 | Fitness: 50.42777777777778 Acceptance for each iteration: [-1] | Time passed: 39.769888401031494
+Coverage: 55.0 | Fitness: 53.696296296296296 Acceptance for each iteration: [0.0] | Time passed: 44.13017129898071
+Coverage: 56.0 | Fitness: 55.07333333333333 Acceptance for each iteration: [0.0, 0.0, 0.0] | Time passed: 47.898638010025024
+Coverage: 63.0 | Fitness: 61.07555555555555 Acceptance for each iteration: [0.0, 0.0, 0.0] | Time passed: 43.227657318115234
+Coverage: 44.0 | Fitness: 42.77037037037037 Acceptance for each iteration: [] | Time passed: 11.096701383590698
+Coverage: 51.0 | Fitness: 49.833333333333336 Acceptance for each iteration: [1.0, 0.5, 0.5, 0.25] | Time passed: 42.853941440582275
+Coverage: 54.0 | Fitness: 52.233333333333334 Acceptance for each iteration: [-1, -1, -1] | Time passed: 44.573585748672485
+Coverage: 57.0 | Fitness: 55.013333333333335 Acceptance for each iteration: [-1, 0.0] | Time passed: 43.588558197021484
+Coverage: 50.0 | Fitness: 49.05 Acceptance for each iteration: [0.0] | Time passed: 53.93199801445007
+Coverage: 45.0 | Fitness: 43.27692307692308 Acceptance for each iteration: [0.0] | Time passed: 40.487711906433105
+Coverage: 51.0 | Fitness: 49.25238095238095 Acceptance for each iteration: [-1, -1, -1] | Time passed: 43.512158155441284
+Coverage: 59.0 | Fitness: 56.72982456140351 Acceptance for each iteration: [1.0, 0.3333333333333333, 0.3333333333333333] | Time passed: 51.218597173690796
+--------------------------------------------------------------------
+BMICalc
+
+default
+Coverage: 59.0 | Fitness: 57.8125 | Avarage acceptance for each iteration: 0.1410216767359625 | Time passed: 24.616798400878906
+Coverage: 45.0 | Fitness: 43.920833333333334 | Avarage acceptance for each iteration: 0.5444444444444443 | Time passed: 15.241465330123901
+Coverage: 54.0 | Fitness: 52.20476190476191 | Avarage acceptance for each iteration: 0.4325396825396825 | Time passed: 20.852931261062622
+Coverage: 57.0 | Fitness: 55.074999999999996 | Avarage acceptance for each iteration: 1.0 | Time passed: 16.474018335342407
+Coverage: 44.0 | Fitness: 42.52121212121212 | Avarage acceptance for each iteration: 0.9285714285714286 | Time passed: 13.970402956008911
+Coverage: 49.0 | Fitness: 48.32222222222222 | Avarage acceptance for each iteration: 0.09563492063492066 | Time passed: 21.503233909606934
+Coverage: 53.0 | Fitness: 50.920833333333334 | Avarage acceptance for each iteration: 0.29166666666666663 | Time passed: 18.330965042114258
+Coverage: 44.0 | Fitness: 43.076190476190476 | Avarage acceptance for each iteration: 0.675 | Time passed: 14.30104923248291
+Coverage: 51.0 | Fitness: 50.225 | Avarage acceptance for each iteration: 0.0 | Time passed: 13.684502840042114
+Coverage: 59.0 | Fitness: 56.870370370370374 | Avarage acceptance for each iteration: 0.8620000000000002 | Time passed: 22.9897403717041
+Coverage: 46.0 | Fitness: 43.586666666666666 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 13.611712455749512
+Coverage: 46.0 | Fitness: 44.28717948717949 | Avarage acceptance for each iteration: 0.6666666666666666 | Time passed: 18.68211555480957
+Coverage: 55.0 | Fitness: 53.40769230769231 | Avarage acceptance for each iteration: 0.38744588744588754 | Time passed: 18.97867202758789
+Coverage: 45.0 | Fitness: 44.425000000000004 | Avarage acceptance for each iteration: 0.8534769463340894 | Time passed: 16.145857334136963
+Coverage: 40.0 | Fitness: 39.026666666666664 | Avarage acceptance for each iteration: 0.09576719576719575 | Time passed: 19.011576175689697
+Coverage: 58.0 | Fitness: 56.364102564102566 | Avarage acceptance for each iteration: 0.76 | Time passed: 19.903667211532593
+Coverage: 40.0 | Fitness: 39.233333333333334 | Avarage acceptance for each iteration: 0.0196078431372549 | Time passed: 14.94455599784851
+Coverage: 54.0 | Fitness: 52.271794871794874 | Avarage acceptance for each iteration: 0.6999999999999998 | Time passed: 17.40849280357361
+Coverage: 31.0 | Fitness: 30.233333333333334 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 11.773791074752808
+Coverage: 43.0 | Fitness: 42.18666666666667 | Avarage acceptance for each iteration: 0.07866666666666665 | Time passed: 18.976668119430542
+
+close Neighbor
+Coverage: 58.0 | Fitness: 56.44444444444444 | Avarage acceptance for each iteration: 0.10133854536839615 | Time passed: 39.264079332351685
+Coverage: 56.0 | Fitness: 54.27857142857143 | Avarage acceptance for each iteration: 0.0 | Time passed: 49.2808837890625
+Coverage: 52.0 | Fitness: 51.211111111111116 | Avarage acceptance for each iteration: 0.0 | Time passed: 48.700326681137085
+Coverage: 52.0 | Fitness: 50.87619047619047 | Avarage acceptance for each iteration: 0.0 | Time passed: 47.42334246635437
+Coverage: 45.0 | Fitness: 44.11333333333334 | Avarage acceptance for each iteration: 0.0 | Time passed: 41.82199716567993
+Coverage: 44.0 | Fitness: 41.870370370370374 | Avarage acceptance for each iteration: 0.0 | Time passed: 45.24240446090698
+Coverage: 64.0 | Fitness: 62.596969696969694 | Avarage acceptance for each iteration: 0.0 | Time passed: 44.92122411727905
+Coverage: 54.0 | Fitness: 51.979166666666664 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.721780776977539
+Coverage: 43.0 | Fitness: 42.41666666666667 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 11.16513180732727
+Coverage: 61.0 | Fitness: 58.625 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 13.031413078308105
+Coverage: 49.0 | Fitness: 47.54242424242424 | Avarage acceptance for each iteration: 0.2942386831275718 | Time passed: 50.17682480812073
+Coverage: 43.0 | Fitness: 42.175000000000004 | Avarage acceptance for each iteration: 0.7555555555555552 | Time passed: 58.57591366767883
+Coverage: 53.0 | Fitness: 51.82857142857143 | Avarage acceptance for each iteration: 0.0 | Time passed: 50.209938287734985
+Coverage: 57.0 | Fitness: 54.70925925925926 | Avarage acceptance for each iteration: 0.0 | Time passed: 62.58417296409607
+Coverage: 50.0 | Fitness: 48.15952380952381 | Avarage acceptance for each iteration: 0.0 | Time passed: 68.44774341583252
+Coverage: 47.0 | Fitness: 44.71666666666667 | Avarage acceptance for each iteration: 0.0 | Time passed: 59.82831144332886
+Coverage: 54.0 | Fitness: 51.88703703703704 | Avarage acceptance for each iteration: 0.0 | Time passed: 61.517369985580444
+Coverage: 39.0 | Fitness: 38.24444444444445 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 11.76130199432373
+Coverage: 43.0 | Fitness: 41.41282051282052 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.34895658493042
+Coverage: 63.0 | Fitness: 61.271794871794874 | Avarage acceptance for each iteration: 0.0 | Time passed: 53.97771668434143
+-----------------------------------------------------
+Coverage: 50.0 | Fitness: 49.21333333333333 | Avarage acceptance for each iteration: 0.9473684210526315 | Time passed: 14.930289506912231
+Coverage: 54.0 | Fitness: 52.43055555555555 | Avarage acceptance for each iteration: 0.5588235294117647 | Time passed: 16.45090389251709
+Coverage: 58.0 | Fitness: 56.24761904761905 | Avarage acceptance for each iteration: 0.6666666666666666 | Time passed: 14.94940185546875
+Coverage: 52.0 | Fitness: 50.62121212121212 | Avarage acceptance for each iteration: 0.5384615384615384 | Time passed: 13.384031772613525
+Coverage: 44.0 | Fitness: 43.208333333333336 | Avarage acceptance for each iteration: 0.13333333333333333 | Time passed: 13.004680633544922
+Coverage: 45.0 | Fitness: 43.333333333333336 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.395116090774536
+Coverage: 57.0 | Fitness: 55.117777777777775 | Avarage acceptance for each iteration: 0.9444444444444444 | Time passed: 17.721479177474976
+Coverage: 44.0 | Fitness: 43.522222222222226 | Avarage acceptance for each iteration: 0.8986215538847118 | Time passed: 14.61194920539856
+Coverage: 57.0 | Fitness: 54.53666666666667 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 13.025764226913452
+Coverage: 39.0 | Fitness: 38.422222222222224 | Avarage acceptance for each iteration: 0.6600000000000003 | Time passed: 15.22645878791809
+Coverage: 49.0 | Fitness: 47.043749999999996 | Avarage acceptance for each iteration: 0.5375496031746031 | Time passed: 20.85214400291443
+Coverage: 58.0 | Fitness: 57.02777777777778 | Avarage acceptance for each iteration: 0.8636363636363636 | Time passed: 17.742278814315796
+Coverage: 31.0 | Fitness: 30.46666666666667 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 11.186914443969727
+Coverage: 55.0 | Fitness: 54.333333333333336 | Avarage acceptance for each iteration: 0.6474426807760141 | Time passed: 17.99050498008728
+Coverage: 59.0 | Fitness: 57.858333333333334 | Avarage acceptance for each iteration: 0.7249999999999999 | Time passed: 14.90529727935791
+Coverage: 57.0 | Fitness: 55.15238095238095 | Avarage acceptance for each iteration: 0.22261904761904763 | Time passed: 15.512742280960083
+Coverage: 45.0 | Fitness: 42.87592592592593 | Avarage acceptance for each iteration: 0.640151515151515 | Time passed: 20.473353624343872
+Coverage: 46.0 | Fitness: 44.18333333333334 | Avarage acceptance for each iteration: 0.3666666666666666 | Time passed: 19.254225254058838
+Coverage: 55.0 | Fitness: 52.641666666666666 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.714340448379517
+Coverage: 53.0 | Fitness: 52.038888888888884 | Avarage acceptance for each iteration: 0.0 | Time passed: 18.03485083580017
+Coverage: 54.0 | Fitness: 52.00416666666666 | Avarage acceptance for each iteration: 0.0 | Time passed: 40.52623248100281
+
+Coverage: 46.0 | Fitness: 44.57878787878788 | Avarage acceptance for each iteration: 0.13636363636363635 | Time passed: 19.62551736831665
+Coverage: 51.0 | Fitness: 49.875 | Avarage acceptance for each iteration: 0.3134920634920635 | Time passed: 17.124487161636353
+Coverage: 56.0 | Fitness: 54.67 | Avarage acceptance for each iteration: 0.20555555555555552 | Time passed: 19.320404767990112
+Coverage: 44.0 | Fitness: 42.61666666666667 | Avarage acceptance for each iteration: 0.3677489177489177 | Time passed: 18.361319541931152
+Coverage: 56.0 | Fitness: 54.42424242424242 | Avarage acceptance for each iteration: 0.1958139597028486 | Time passed: 19.567235231399536
+Coverage: 44.0 | Fitness: 43.147619047619045 | Avarage acceptance for each iteration: 0.44349206349206344 | Time passed: 19.93896746635437
+Coverage: 43.0 | Fitness: 42.199999999999996 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.858811140060425
+Coverage: 53.0 | Fitness: 51.22380952380953 | Avarage acceptance for each iteration: 0.7777777777777778 | Time passed: 17.40302324295044
+Coverage: 54.0 | Fitness: 51.61666666666667 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.727111339569092
+Coverage: 46.0 | Fitness: 44.94444444444444 | Avarage acceptance for each iteration: 0.4741718426501035 | Time passed: 17.70687460899353
+Coverage: 44.0 | Fitness: 42.59166666666666 | Avarage acceptance for each iteration: 0.44166666666666676 | Time passed: 16.74347496032715
+Coverage: 43.0 | Fitness: 42.6 | Avarage acceptance for each iteration: 0.37129368216324726 | Time passed: 15.870216846466064
+Coverage: 44.0 | Fitness: 43.193333333333335 | Avarage acceptance for each iteration: 0.85 | Time passed: 14.27582573890686
+Coverage: 42.0 | Fitness: 41.544444444444444 | Avarage acceptance for each iteration: 0.053764790764790765 | Time passed: 17.418822526931763
+Coverage: 42.0 | Fitness: 41.43333333333334 | Avarage acceptance for each iteration: 0.782608695652174 | Time passed: 16.451350450515747
+Coverage: 57.0 | Fitness: 56.21333333333333 | Avarage acceptance for each iteration: 0.0 | Time passed: 22.395644664764404
+Coverage: 54.0 | Fitness: 52.781481481481485 | Avarage acceptance for each iteration: 0.6875 | Time passed: 14.86997389793396
+Coverage: 57.0 | Fitness: 54.91372549019608 | Avarage acceptance for each iteration: 0.9285714285714286 | Time passed: 15.773424863815308
+Coverage: 45.0 | Fitness: 42.91960784313725 | Avarage acceptance for each iteration: 1.0 | Time passed: 14.620757102966309
+Coverage: 46.0 | Fitness: 43.59166666666667 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 13.333194494247437
+
+Coverage: 46.0 | Fitness: 44.56666666666667 | Avarage acceptance for each iteration: 0.0 | Time passed: 49.863361835479736
+Coverage: 41.0 | Fitness: 40.08333333333333 | Avarage acceptance for each iteration: 0.0 | Time passed: 47.722073793411255
+Coverage: 45.0 | Fitness: 44.48333333333333 | Avarage acceptance for each iteration: 0.0 | Time passed: 48.93943738937378
+Coverage: 57.0 | Fitness: 55.62962962962963 | Avarage acceptance for each iteration: 0.0 | Time passed: 56.79481625556946
+Coverage: 53.0 | Fitness: 52.400000000000006 | Avarage acceptance for each iteration: 0.0 | Time passed: 42.33187699317932
+Coverage: 57.0 | Fitness: 54.99583333333333 | Avarage acceptance for each iteration: 0.0 | Time passed: 44.25604701042175
+Coverage: 59.0 | Fitness: 56.72105263157895 | Avarage acceptance for each iteration: 0.0 | Time passed: 52.01632213592529
+Coverage: 56.0 | Fitness: 53.91176470588235 | Avarage acceptance for each iteration: 0.5060975609756105 | Time passed: 56.14211177825928
+Coverage: 58.0 | Fitness: 55.608333333333334 | Avarage acceptance for each iteration: 0.0 | Time passed: 48.59097409248352
+Coverage: 46.0 | Fitness: 43.61333333333334 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 13.084712266921997
+Coverage: 50.0 | Fitness: 47.77962962962963 | Avarage acceptance for each iteration: 0.0 | Time passed: 57.10138463973999
+Coverage: 53.0 | Fitness: 51.021568627450975 | Avarage acceptance for each iteration: 0.0 | Time passed: 43.091004371643066
+Coverage: 54.0 | Fitness: 52.596666666666664 | Avarage acceptance for each iteration: 0.8 | Time passed: 51.47183585166931
+Coverage: 53.0 | Fitness: 51.14666666666667 | Avarage acceptance for each iteration: 0.0 | Time passed: 58.63807010650635
+Coverage: 48.0 | Fitness: 46.19761904761905 | Avarage acceptance for each iteration: 0.0 | Time passed: 48.651455879211426
+Coverage: 43.0 | Fitness: 40.66833333333334 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.97560429573059
+Coverage: 61.0 | Fitness: 59.307692307692314 | Avarage acceptance for each iteration: 0.0 | Time passed: 52.437074184417725
+Coverage: 45.0 | Fitness: 43.02708333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 12.121476650238037
+Coverage: 45.0 | Fitness: 43.957142857142856 | Avarage acceptance for each iteration: 0.0 | Time passed: 47.08418560028076
+Coverage: 54.0 | Fitness: 51.58245614035088 | Avarage acceptance for each iteration: 0.0 | Time passed: 41.807129859924316
+----------------------------------------------------
+HardToFind
+
+Coverage: 60.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: 0.2203846748489603 | Time passed: 44.81975317001343
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.25862534892085814 | Time passed: 47.36742687225342
+Coverage: 40.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: 0.7319444444444447 | Time passed: 39.562979221343994
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.2946627623782204 | Time passed: 46.116127014160156
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.38036040264955867 | Time passed: 44.25661540031433
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.2369579251158201 | Time passed: 41.06826066970825
+Coverage: 60.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.553285360336304
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.390909383014646 | Time passed: 44.865193367004395
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.854419708251953
+Coverage: 60.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: 0.35287896385457324 | Time passed: 47.704246044158936
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.7443900848010438 | Time passed: 42.982012033462524
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.878333330154419
+Coverage: 40.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.510693073272705
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.509530782699585
+Coverage: 40.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: 0.36659473005626864 | Time passed: 45.53513789176941
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.38453547790897163 | Time passed: 46.156246185302734
+Coverage: 40.0 | Fitness: 39.83333333333333 | Avarage acceptance for each iteration: 0.5499309868875087 | Time passed: 38.9253830909729
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: no worse solution was proposed | Time passed: 10.547125577926636
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.7732638888888892 | Time passed: 27.989109754562378
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.7652090847006103 | Time passed: 32.664466857910156
+
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.8650488400488396 | Time passed: 29.22146487236023
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.8594017094017096 | Time passed: 23.99720549583435
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.22751353985120212 | Time passed: 42.13781023025513
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.5228070175438599 | Time passed: 32.03675174713135
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.6936274509803915 | Time passed: 38.00020742416382
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.506289308176101 | Time passed: 30.52218985557556
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.616794217687075 | Time passed: 31.138328552246094
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.47414581651869775 | Time passed: 33.66800570487976
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.6948868071818887 | Time passed: 34.550955295562744
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.9416666666666667 | Time passed: 25.807799339294434
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.8101029601029603 | Time passed: 22.698158979415894
+Coverage: 40.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.3970149253731343 | Time passed: 36.178444385528564
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.8421052631578947 | Time passed: 32.969643354415894
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.8564814814814814 | Time passed: 40.91621685028076
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.22981859410430858 | Time passed: 32.68317747116089
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.45018584109493187 | Time passed: 36.80714464187622
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.2120865586313115 | Time passed: 36.7616708278656
+Coverage: 60.0 | Fitness: 59.83333333333333 | Avarage acceptance for each iteration: 0.6628419452887538 | Time passed: 26.801563501358032

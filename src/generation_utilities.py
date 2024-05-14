@@ -26,6 +26,14 @@ class Solution:
             actions += len(test)
 
         return actions
+    
+    def numberofCases(self):
+        cases= 0
+
+        for test in self.test_suite:
+            cases += 1
+
+        return cases
 
 
 # Generates a test suite, containing between 1 and "max" test cases

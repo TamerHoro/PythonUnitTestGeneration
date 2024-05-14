@@ -195,7 +195,7 @@ def mutate(solution):
 # Default parameters
 
 # Location of the metadata on the CUT
-metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example_hard_to_find/hard_to_find_metadata.json"
+metadata_location = "C:/Users/jonat/Desktop/Python/PythonUnitTestGeneration/src/example/BMICalc_metadata.json"
 
 # Fitness function
 fitness_function = "statement"
@@ -207,19 +207,19 @@ max_test_cases = 20
 max_actions = 20
 
 # Maximum number of generations
-max_gen = 80
+max_gen = 10
 
 # Maximum number of restarts
-max_restarts = 5
+max_restarts = 10
 
 # Maximum number of mutations to try before restarting
-max_tries = 50
+max_tries = 10
 
 # Test suite size penalty
 num_tests_penalty = 10
 
 # Test length penalty
-length_test_penalty = 50
+length_test_penalty = 30
 
 # Get command-line arguments
 try:
@@ -348,7 +348,7 @@ while gen <= max_gen and restarts <= max_restarts:
 #Log past results  
 coverage = statement_fitness(metadata, solution_best)
 totalSuiteLength = solution_best.total_length()
-f = open("HillClimberFitnnesslog.txt", "a")
+f = open("HillClimberFitnesslog.txt", "a")
 f.write('Coverage: '+str(coverage)+' | Fitness: '+str(solution_best.fitness)) # + '\n'
 f.close()
 
